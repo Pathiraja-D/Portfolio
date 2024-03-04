@@ -5,9 +5,11 @@ import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import Image from 'next/image'
 import { GithubIcon } from '@/components/Icons'
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg"
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
+import email from '../../public/images/projects/emailspam.png'
+import patient from '../../public/images/projects/patient.png'
+import travel from '../../public/images/projects/travelcompanion.png'
 
 const FramerImage = motion(Image);
 
@@ -19,16 +21,14 @@ const FeaturedProjects = ({type,title,summary,img,link,githublink}) => {
             <Link href={link} target='_blank'
             className='w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full'>
                 <FramerImage src={img} alt={title} className='w-full h-auto' priority sizes='(max-width:768px) 100vw,(max-width:1200px) 50vw,50vw' 
-                whileHover={{scale:1.05}}
-                transition={{duration:0.2}}/>
+                />
             </Link>
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem]
              bg-dark rounded-br-3xl dark:bg-light xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]'/>
             <div className='w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6 '>
                 <span className='text-primary font-medium text-xl dark:text-primaryDark xs:text-base'>{type}</span>
-                <Link href={link} target='_blank' className='hover:underline underline-offset-4'>
-                <h2 className='my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm'>{title}</h2>
-                </Link>
+                <motion.h2 className='my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm' whileHover={{scale:1.05}}
+                transition={{duration:0.2}}>{title}</motion.h2>
                 <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>
                     {summary}
                 </p>
@@ -92,32 +92,41 @@ const projects = () => {
             <div className='grid grid-cols-12 gap-24 px-10 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
                 <div className='col-span-12 '>
                     <FeaturedProjects 
-                    title="Crypto Screener Application"
-                    summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                    It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                    local currency."
+                    title="Email Spam Detector"
+                    summary=""
                     link="/"
-                    type="Featured"
+                    type="Machine Learning"
                     githublink="/"
-                    img={project1}/>
+                    img={email}/>
                 </div>
-                <div className='col-span-6 sm:col-span-12'>
-                    <Project title="" img={project1} type="" link="/" githublink="/" />
-                </div>
-                <div className='col-span-6 sm:col-span-12'>
-                <Project title="" img={project1} type="" link="/" githublink="/" />
-                </div>
+                
 
                 <div className='col-span-12'>
                 <FeaturedProjects 
-                    title="Crypto Screener Application"
-                    summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                    It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                    local currency."
+                    title="Travel Companion Mobile App"
+                    summary=""
                     link="/"
-                    type="Featured"
+                    type="Android Application"
                     githublink="/"
-                    img={project1}/>
+                    img={travel}/>
+                </div>
+                <div className='col-span-12'>
+                <FeaturedProjects 
+                    title="Digital Wallet Web Application"
+                    summary=""
+                    link="/"
+                    type="Web Application"
+                    githublink="/"
+                    img={travel}/>
+                </div>
+                <div className='col-span-12'>
+                <FeaturedProjects 
+                    title="Patient Registration System"
+                    summary=""
+                    link="/"
+                    type="Desktop Application"
+                    githublink="/"
+                    img={patient}/>
                 </div>
             </div>
         </Layout>

@@ -41,8 +41,8 @@ export default function Home() {
               />
               <p className="my-4 text-base font-medium md:text-base sm:text-xs">
                 As a skilled computer engineering undergraduate student, I am
-                dedicated to learn and develop my skills in web development and
-                software engineering. Explore my latest projects and articles,
+                dedicated to learn and develop my skills in web development
+                software engineering and data science related fields. Explore my latest projects and articles,
                 showcasing my expertise in various new technology.
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center ">

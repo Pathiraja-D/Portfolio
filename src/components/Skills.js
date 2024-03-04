@@ -27,19 +27,21 @@ const Skills = () => {
         md:bg-circularLightMd md:dark:bg-circularDarkMd
         sm:bg-circularLightSm sm:dark:bg-circularDarkSm'>
             <motion.div className='flex items-center justify-center rounded-full font-semibold bg-dark 
-            dark:text-dark dark:bg-light text-light p-8 shadow-dark
+            dark:text-dark dark:bg-light text-light p-4 shadow-dark
             lg:p-6 md:p-4 xs:text-xs xs:p-2'
             whileHover={{scale:1.05}}>
-                Web
+                Java Script
             </motion.div>
             <Skill name="React" x="-25vw" y="2vw"/>
             <Skill name="Next.js" x="-5vw" y="-10vw"/>
-            <Skill name="Gatsby" x="20vw" y="6vw"/>
+            <Skill name="Python" x="20vw" y="6vw"/>
             <Skill name="Node.js" x="0vw" y="12vw"/>
             <Skill name="Express.js" x="-20vw" y="-15vw"/>
             <Skill name="MongoDB" x="15vw" y="-12vw"/>
-            <Skill name="PostgreSQL" x="32vw" y="-5vw"/>
-            <Skill name="GraphQL" x="0vw" y="-20vw"/>
+            <Skill name="SQL Server" x="32vw" y="-5vw"/>
+            <Skill name="ASP.Net" x="0vw" y="-20vw"/>
+            <Skill name="Machine Learning" x="0vw" y="20vw"/>
+            <Skill name="Deep Learning" x="-40vw" y="-2vw"/>
         </div>
     </>
   )

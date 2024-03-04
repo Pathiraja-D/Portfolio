@@ -13,7 +13,8 @@ const Details = ({position,company,companyLink,time,address,work})=>{
             <h3 className='capitalize font-bold text-2xl sm:text-xl xs:text-lg'>
                 {position}&nbsp;
                 <a href = {companyLink} target="_blank" className='text-primary dark:text-primaryDark underline ' >@{company}</a>
-                <span className='capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm'>
+                <br/>
+                <span className='capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm '>
                     {time}|{address}
                 </span>
                 <p className='font-medium w-full md:text-sm'>
@@ -44,11 +45,9 @@ const Experience = () => {
             md:left-[30px] xs:left-[20px]'/>
             <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
                 <Details 
-                position="Software Engineer" company="Google"
-                time="2022-Present" address="Mountain View, CA"
-                work="Worked on a team responsible for developing new features for Google's 
-                search engine, including improving the accuracy and relevance of search results and 
-                developing new tools for data analysis and visualization." companyLink="www.google.com"/> 
+                position="Computer Operator" company="Sri Lanka Telecom PLC"
+                time="Mar 2020-Sep 2020" address="Telecom Regional Office Kalutara"
+                work="Worked with a team responsible for customer complaints. Familiarized with the systems of the company ." companyLink="www.slt.lk"/> 
                 
             </ul>
         </div>

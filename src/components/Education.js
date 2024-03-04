@@ -12,7 +12,8 @@ const Details = ({type,time,place,info})=>{
         transition={{duration:0.5,type:"spring"}}>
             <h3 className='capitalize font-bold text-2xl sm:text-xl xs:text-lg'>
                 {type}
-                <span className='capitalize font-medium text-dark/75 xs:text-sm'>
+                <br/>
+                <span className='capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm'>
                     {time}|{place}
                 </span>
                 <p className='font-medium w-full md:text-sm'>
@@ -43,25 +44,29 @@ const Education = () => {
             md:w-[2px] md:left-[30px] xs:left-[20px]'/>
             <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
                 <Details 
-                type="Bachelor Of Science In Computer Science" 
-                time="2016-2020"
-                place="Massachusetts Institute Of Technology (MIT)"
-                info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                Intelligence."/> 
-
-                <Details 
-                type="Master Of Computer Science" 
-                time="2020-2022"
-                place="Stanford University"
-                info="Completed a master's project on deep learning, developing a new neural network architecture for natural 
-                language understanding."/> 
+                type="Bachelor Of Science Engineering In Computer Engineering" 
+                time="2021-2025"
+                place="Faculty of Engineering University of Ruhuna"
+                info="Relevant courses including Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
+                Intelligence and Software Engineering."/> 
 
                 <Details 
                 type="Online Coursework" 
-                time="2016-2020"
-                place="Coursera And EdX"
-                info="Completed coursework in advanced topics such as Reinforcement Learning, Computer Vision, and Machine 
-                Learning Engineering."/>  
+                time="2024"
+                place="Coursera"
+                info="Completed coursework in Neural Networks and Deep Learning and ASP.NET Foundation."/>  
+
+                <Details 
+                type="Online Coursework" 
+                time="2023"
+                place="SLIIT"
+                info="Completed coursework in Artificial Intelligence Stage 1&2."/>
+
+                <Details 
+                type="Diploma in Information Technology" 
+                time="2020"
+                place="ESOFT Metro College Kalutara"
+                info="Completed a diploma in Information Technology including basics of programming, microsoft office services and computer hardware."/>
             </ul>
         </div>
 
