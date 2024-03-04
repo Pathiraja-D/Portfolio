@@ -28,7 +28,7 @@ export default function Home() {
               <Image
                 src={profilePic}
                 alt="image"
-                className="w-auto p-3 rounded-full  h-auto lg:w-auto md:inline-block md:w-full"
+                className="w-auto md:p-3 p-20 rounded-full  h-auto lg:w-auto md:inline-block md:w-full"
                 priority
                 sizes="(max-width:768px) 100vw,(max-width:1200px) 50vw,50vw"
               />
@@ -39,7 +39,7 @@ export default function Home() {
                 className="!text-6xl !text-left 
               xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl "
               />
-              <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
+              <p className="my-4 text-base font-medium md:text-base sm:text-xs">
                 As a skilled computer engineering undergraduate student, I am
                 dedicated to learn and develop my skills in web development and
                 software engineering. Explore my latest projects and articles,
@@ -70,15 +70,17 @@ export default function Home() {
             </div>  
         </div>
         </Layout>
-        <div className="absolute right-8 bottom-8 inline-block w-32 md:hidden">
+        
+        
+      </main>
+
+      <div className="absolute right-8 -bottom-4 inline-block w-32 lg:hidden">
           <Image
             src={mode === "dark" ? darkrobot : lightrobot}
             alt="robot"
             className="w-full h-auto"
           />
           </div>
-        
-      </main>
     </>
   );
 }
