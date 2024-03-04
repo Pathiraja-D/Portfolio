@@ -10,6 +10,7 @@ import TransitionEffect from '@/components/TransitionEffect'
 import email from '../../public/images/projects/emailspam.png'
 import patient from '../../public/images/projects/patient.png'
 import travel from '../../public/images/projects/travelcompanion.png'
+import wallet from '../../public/images/projects/wallet.png'
 
 const FramerImage = motion(Image);
 
@@ -93,10 +94,12 @@ const projects = () => {
                 <div className='col-span-12 '>
                     <FeaturedProjects 
                     title="Email Spam Detector"
-                    summary=""
-                    link="/"
+                    summary="Compariosn between two machine learning models(Logistic Regression & Naive Bayes)
+                    that which model performs well in identifying spam email for a trained datast from kaggle. Python Flask is used to
+                    create the backend and HTML CSS for frontend."
+                    link="https://email-spam-detector-jyr7.onrender.com/"
                     type="Machine Learning"
-                    githublink="/"
+                    githublink="https://github.com/Pathiraja-D/Spam-Email-Detection-ML_Editted_By_D"
                     img={email}/>
                 </div>
                 
@@ -104,28 +107,29 @@ const projects = () => {
                 <div className='col-span-12'>
                 <FeaturedProjects 
                     title="Travel Companion Mobile App"
-                    summary=""
-                    link="/"
+                    summary="Flutter mobile application development. Users can keep track of their memories like images, videos and locations. Google map facility also provided.
+                    Weather Forecast feature and Reminder for an upcoming journey feature."
+                    link="https://www.linkedin.com/posts/dinukpathiraja_flutter-firebase-mobileapp-activity-7154594945641672704--54N?utm_source=share&utm_medium=member_desktop"
                     type="Android Application"
-                    githublink="/"
+                    githublink="https://github.com/Pathiraja-D/Travel_Companion"
                     img={travel}/>
                 </div>
                 <div className='col-span-12'>
                 <FeaturedProjects 
                     title="Digital Wallet Web Application"
-                    summary=""
-                    link="/"
+                    summary="CRUD operations for users who are using the digital wallet web app. ASP.Net and React is used. Database is SQL Server"
+                    link="https://www.linkedin.com/posts/dinukpathiraja_digitalwallet-aspnet-reactjs-activity-7128728095661948928-ttUD?utm_source=share&utm_medium=member_desktop"
                     type="Web Application"
-                    githublink="/"
-                    img={travel}/>
+                    githublink="https://github.com/Pathiraja-D/Digital_Wallet"
+                    img={wallet}/>
                 </div>
                 <div className='col-span-12'>
                 <FeaturedProjects 
                     title="Patient Registration System"
-                    summary=""
-                    link="/"
+                    summary="Desktop Application using WPF C#. Patient handling for a hospital. Can issue the bill for the patient and keep all the past records of the patients."
+                    link="https://www.linkedin.com/posts/dinukpathiraja_wpf-mvvm-sqlite-activity-7089510404720119808-90cJ?utm_source=share&utm_medium=member_desktop"
                     type="Desktop Application"
-                    githublink="/"
+                    githublink="https://github.com/Pathiraja-D/Group-Project-3894-3901"
                     img={patient}/>
                 </div>
             </div>
