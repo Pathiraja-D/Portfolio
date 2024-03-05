@@ -43,7 +43,7 @@ const about = () => {
     </Head>
     <TransitionEffect/>
     <main className='flex w-full flex-col items-center justify-center dark:text-light '>
-        <Layout className='pt-18'>
+        <Layout className='pt-18 px-5'>
             <AnimatedText text="Professional Journey and Expertise" className='mb-16  lg:!text-6xl sm:!text-5xl xs:!text-4xl sm:mb-8'/>
             <div className='grid w-full grid-cols-8 gap-16 sm:gap-8 '>
                 <div className='col-span-3  flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8'>
