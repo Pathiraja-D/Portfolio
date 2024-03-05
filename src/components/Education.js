@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import { motion,useScroll } from 'framer-motion'
 import LiIcon from './LiIcon'
+import AnimatedText from './AnimatedText';
 
 const Details = ({type,time,place,info})=>{
     const ref = useRef(null);
@@ -14,7 +15,7 @@ const Details = ({type,time,place,info})=>{
                 {type}
                 <br/>
                 <span className='capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm'>
-                    {time}|{place}
+                    {time}{" "}|{" "}{place}
                 </span>
                 <p className='font-medium w-full md:text-sm'>
                     {info}
@@ -34,9 +35,9 @@ const Education = () => {
 
   return (
     <div className='my-64 '>
-        <h2 className='font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16'> 
-            Education
-        </h2>
+        <AnimatedText text="Education" className='font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16'> 
+            
+        </AnimatedText>
         <div ref={ref} className='w-[75%] mx-auto relative lg:w-[90%] md:w-full'>
             <motion.div 
             style={{scaleY:scrollYProgress}}
@@ -59,8 +60,9 @@ const Education = () => {
                 <Details 
                 type="Online Coursework" 
                 time="2023"
-                place="SLIIT"
-                info="Completed coursework in Artificial Intelligence Stage 1&2."/>
+                place="SLIIT and UOM"
+                info="Completed coursework in Artificial Intelligence Stage 1&2.
+                Completed coursework in Python"/>
 
                 <Details 
                 type="Diploma in Information Technology" 
